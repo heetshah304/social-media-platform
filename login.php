@@ -1,5 +1,4 @@
 <?php
-// Include database connection
 require 'db.php';
 session_start();
 
@@ -22,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Start a session and store user information
             $_SESSION['user_id'] = $id;
             $_SESSION['username'] = $username;
-            header("Location: index.php"); // Redirect to homepage
+            header("Location: index.php"); 
             exit();
         } else {
             echo "Invalid password.";

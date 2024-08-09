@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['post_id'])) {
     }
     
     $stmt->close();
-    header("Location: index.php"); // Redirect to index.php
+    header("Location: index.php"); 
     exit();
 }
 ?>

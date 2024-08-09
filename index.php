@@ -1,7 +1,7 @@
 <?php
 require 'db.php';
-require 'session.php'; // Ensure user is logged in
-require 'header.php'; // Include header with profile icon and logout button
+require 'session.php'; 
+require 'header.php'; 
 
 // Fetch all posts along with user details
 $query = "

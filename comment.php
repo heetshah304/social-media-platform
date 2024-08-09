@@ -11,10 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['post_id']) && isset($_
     $stmt->bind_param("iis", $user_id, $post_id, $comment);
 
     if ($stmt->execute()) {
-        header("Location: index.php"); // Redirect to index.php
+        header("Location: index.php");
         exit();
     } else {
-        // Handle error
         echo "An error occurred. Please try again.";
     }
     

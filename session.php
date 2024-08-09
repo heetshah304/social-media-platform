@@ -6,6 +6,4 @@ if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
 }
-
-// Use this file in any page where session management is needed
 ?>

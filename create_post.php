@@ -1,10 +1,10 @@
 <?php
 require 'db.php'; // Database connection
 require 'session.php'; // Ensure user is logged in
-require 'header.php'; // Include header with profile icon and logout button
+require 'header.php'; 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['content'])) {
-    // Sanitize input
+    
     $content = htmlspecialchars($_POST['content']);
     $user_id = $_SESSION['user_id'];
 
